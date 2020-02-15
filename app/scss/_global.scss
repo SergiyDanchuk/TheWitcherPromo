@@ -9,6 +9,13 @@ html{
 html,
 body {
     height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(20, 18, 24);
+
     // position: relative;
     // overflow-x: hidden;
 }
@@ -19,7 +26,7 @@ body{
 a{
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 ul,
 li{
@@ -40,12 +47,12 @@ li{
 	flex: 0 0 auto;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1165px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.container-fluid{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 0;
-}
+// .container-fluid{
+//     max-width: 100%;
+//     margin: 0 auto;
+//     padding: 0 0;
+// }

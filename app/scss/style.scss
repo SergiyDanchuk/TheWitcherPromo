@@ -1,12 +1,163 @@
-@import 'vars';
-@import 'global';
 @import 'fonts';
+@import 'global';
 
+.content{
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0) 59.28%, #141218 100%), 
+                linear-gradient(270deg, #141218 3.38%, rgba(20, 18, 24, 0) 10.43%), 
+                linear-gradient(179.45deg, #141218 0.55%, rgba(20, 18, 24, 0) 8.71%),  
+                url(../img/geralt-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
 
+// start header
+.header__box{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 60px;
+}
+.header__menu{
+    display: flex;
+    align-items: center; 
+    nav{
+        margin-left: 68px;
+    }
+    ul{
+        display: flex; 
+        li {
+            margin-left: 24px;
+        }
+    }
+}
+.header__link{
+    a {
+        margin-left: 20px;
+    }
+}
+// end header
 
+// start main
+.main{
+    margin-top: 90px;
+    position: relative;
+    &-rating{
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        li + li{
+            margin-left: 4px;
+        }
+        span{
+            margin-left: 5px;
+        }
+    }
+    p{
+        max-width: 458px;
+        line-height: 150%;
+    }
+    h1{
+        font-family: 'MasonChronicles';
+        font-weight: normal;
+        font-size: 76px;
+        line-height: 100%;
+        padding: 0;
+        margin: 10px 0px;
+    }
+    .main__btn{
+        font-weight: bold;
+        padding: 22px 72px;
+        background-color: #9D2929;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+    .play__btn{
+        position: absolute;
+        left: 70%;
+        top: 40%;
+        transform: translate(-70%, -40%);
+        .big__circle{
+            width: 132px;
+            height: 132px; 
+            background-color: rgba(#9D2929, 0.5);
+            border-radius: 50%;
+        }
+        .small__circle{
+            width: 100px;
+            height: 100px;
+            background-color: #9D2929;
+            border-radius: 50%;
+            position: absolute;   
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn__icon{
+            position: absolute;   
+            top: 50%;
+            left: 60%;
+            transform: translate(-60%, -50%);
+        }
+    }
+    .swiper-container {
+        width: 420px;
+        height: 113px;
+        margin: 85px 0px 70px 0px;
+        position: relative;
+    }
+    .swiper-slide{
+        max-width: 164px;
+        height: 113px;
+        .slide__text{
+            margin: 73px 58px 13px 13px;
+        }
+        span{
+            display: block; 
+            font-size: 10px;
+            & + span{
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 2px;
+            }
+        }  
+    }
+    .swiper-button-next{
+      right: 3px;
+      &::after{
+          content:'';
+      }
+    }
+    .swiper-slide{ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+    .swiper-slide.one{
+        background-image: url(../img/card-image1.png);
+    }
+    .swiper-slide.two{
+        background-image: url(../img/card-image2.png);
+    }
+}
+// end main
 
-
-
-
+// start footer
+.footer{
+    color: rgba($color: #fff, $alpha: 0.4);
+    line-height: 20px;
+    a{
+        color: rgba($color: #fff, $alpha: 0.4);
+        & {
+            margin-left: 20px;
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 20px 0px;
+    }
+}
+// end footer
 
 @import 'media';

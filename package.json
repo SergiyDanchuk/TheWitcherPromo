@@ -19,5 +19,8 @@
     "slick-carousel": "^1.8.1",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-rename": "^1.4.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.1"
   }
 }
