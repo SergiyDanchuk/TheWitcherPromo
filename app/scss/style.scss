@@ -100,15 +100,14 @@
             transform: translate(-60%, -50%);
         }
     }
-    .swiper-container {
-        width: 420px;
-        height: 113px;
-        margin: 85px 0px 70px 0px;
+    .slider__wrapper{
+        width: 419px;
+        height: 118px;
         position: relative;
+        margin: 85px 0px 70px
     }
     .swiper-slide{
-        max-width: 164px;
-        height: 113px;
+        
         .slide__text{
             margin: 73px 58px 13px 13px;
         }
@@ -123,21 +122,16 @@
         }  
     }
     .swiper-button-next{
-      right: 3px;
+      right: -30px;
+      outline: none;
       &::after{
           content:'';
       }
     }
     .swiper-slide{ 
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: 0 0;
-    }
-    .swiper-slide.one{
-        background-image: url(../img/card-image1.png);
-    }
-    .swiper-slide.two{
-        background-image: url(../img/card-image2.png);
     }
 }
 // end main
