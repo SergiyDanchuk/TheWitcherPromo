@@ -1,0 +1,76 @@
+@media (max-width: 1144px){
+    .play__btn{
+        display: none;
+    }
+}
+@media (max-width: 640px){
+    .main .swiper-button-next{
+        right: 174px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+    .main{
+        margin-top: 196px;
+        p{
+            max-width: 315px;
+        }
+        h1{
+            font-size: 56px;
+        }
+    }
+    .footer__box{
+        display: block;
+    }
+    .footer__info{
+        a{
+            margin-left: 0px;
+            margin-right: 20px;
+            margin-top: 8px;
+        }
+    }   
+    .burger__menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header{
+        background-color: #9D2929;
+        position: absolute;
+        right: 0;
+    }
+    .header__box{
+        display: none;
+        .header__menu{
+            display: flex;
+            margin-top: -38px;
+            margin-right: 30px;
+            flex-direction: column;
+            nav{
+                margin-top: 10px;
+                margin-left: -26px;
+                text-align: center;
+            }
+        }
+        nav ul{
+            display: block;
+            margin: 0 auto;
+            a{
+                margin-bottom: 17px;
+            }
+        }
+    }
+    .header__link{
+        margin-right: 54px;
+        margin-bottom: 30px;
+
+    }
+        
+}
+
+@media (min-width: 641px){
+    .header__box{
+        display: flex;
+    }
+}
